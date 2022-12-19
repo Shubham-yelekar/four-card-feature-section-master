@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+
+
+body {
+    
+    background-color: var(--VeryLightGray);
+    font-family: 'Poppins', sans-serif;
+
+    padding: 2rem;
+
+    
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    gap: 3rem;
+}
+
+.heading {
+    margin: 4rem 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.light-heading {
+    font-size: 2.4rem;
+    font-weight: 200;
+    line-height: 3.6rem;
+    color: var(--VeryDarkBlue);
+}
+
+.bold-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--VeryDarkBlue);
+}
+
+.heading p {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 50ch;
+    color: var(--GrayishBlue);
+}
+
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article {
+    height: 300px;
+    width: 100%;
+    background-color: white ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+article h3 {
+    font-size: 400;
+    font-size: 2rem;
+    color: var(--VeryDarkBlue);
+}
+
+article p {
+    font-size: 400;
+    font-size: 1.4rem;
+    color: var(--GrayishBlue);
+}
+
+.first {
+    border-top: 5px solid var(--Cyan);
+}
+
+.sec {
+    border-top: 5px solid var(--Red);
+}
+
+.third {
+    border-top: 5px solid var(--Orange);
+}
+
+.forth {
+    border-top: 5px solid var(--Blue);
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .cards-container {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    article {
+    height: 250px;
+    width: 350px;
+    
+}
+
+}
+
